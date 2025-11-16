@@ -19,13 +19,13 @@
   <script type="text/babel">
 
 const RollVsChillGame = () => {
-  const [gameState, setGameState] = useState('start'); // start, character, story, ending
-  const [character, setCharacter] = useState(null); // 'roll' or 'chill'
-  const [energy, setEnergy] = useState(50);
-  const [happiness, setHappiness] = useState(50);
-  const [scene, setScene] = useState(0);
-  const [choices, setChoices] = useState([]);
-  const [showResult, setShowResult] = useState(false);
+  const [gameState, setGameState] = React.useState('start'); // start, character, story, ending
+  const [character, setCharacter] = React.useState(null); // 'roll' or 'chill'
+  const [energy, setEnergy] = React.useState(50);
+  const [happiness, setHappiness] = React.useState(50);
+  const [scene, setScene] = React.useState(0);
+  const [choices, setChoices] = React.useState([]);
+  const [showResult, setShowResult] = React.useState(false);
 
   // 游戏开始
   const startGame = () => {
@@ -454,7 +454,7 @@ const RollVsChillGame = () => {
     </div>
   );
 };
-    ReactDOM.createRoot(document.getElementById('root')).render(<RollVsChillGame />);
+    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(RollVsChillGame));
   </script>
 </body>
 </html>
