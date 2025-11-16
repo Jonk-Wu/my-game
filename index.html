@@ -17,9 +17,8 @@
 
   <!-- 在这里贴你的 React 组件 -->
   <script type="text/babel">
-  import React, { useState, useEffect } from 'react';
 
-  const RollVsChillGame = () => {
+const RollVsChillGame = () => {
   const [gameState, setGameState] = useState('start'); // start, character, story, ending
   const [character, setCharacter] = useState(null); // 'roll' or 'chill'
   const [energy, setEnergy] = useState(50);
